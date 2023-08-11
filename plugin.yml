@@ -1,0 +1,7 @@
+main: de.bruno.invsee.main.Main
+name: InvSeePlugin
+version: 1.0
+
+commands:
+   invsee:
+      description: Opens the inventory of the specified player
