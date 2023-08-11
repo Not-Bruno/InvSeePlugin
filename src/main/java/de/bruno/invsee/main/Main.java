@@ -10,7 +10,6 @@ import de.bruno.invsee.commands.InvSeeCommand;
 
 public class Main extends JavaPlugin {
 	public static Main plugin;
-
 	
 	public void onEnable() {
 		plugin = this;

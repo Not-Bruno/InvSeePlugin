@@ -19,8 +19,10 @@ public class InvClearCommand implements CommandExecutor{
 			Player player = (Player) sender;
 			if (player.hasPermission("op")) {
 				if (args.length==1) {
+					
 					Player target = Bukkit.getPlayer(args[1]);
 					target.getInventory().clear();
+					
 					player.sendMessage(Color.GREEN+"Cleared Inventory of "+Color.ORANGE+target.getName());
 					
 					Date date = new Date();

@@ -20,9 +20,11 @@ public class InvSeeCommand implements CommandExecutor {
 			Player player = (Player) sender;
 			if (player.hasPermission("op")) {
 				if (args.length==1) {
+					
 					Player target = Bukkit.getPlayer(args[1]);
 					Inventory invTarget = target.getInventory();
 					player.openInventory(invTarget);
+					
 					player.sendMessage(Color.GREEN+"Inventory of player "+Color.ORANGE+target.getName());
 					
 					Date date = new Date();
