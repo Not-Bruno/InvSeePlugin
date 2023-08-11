@@ -26,7 +26,10 @@ public class Main extends JavaPlugin {
 	
 	
 	public void onDisable() {
-		System.out.println("[LOG] - InvSee Plugin unload");
+		Date date = new Date();
+		Timestamp ts = new Timestamp(date.getTime());
+		
+		System.out.println("[LOG] {"+ts+"} - InvSee Plugin unload");
 	}
 	
 	public static Main getPlugin() {
