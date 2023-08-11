@@ -5,3 +5,5 @@ version: 1.0
 commands:
    invsee:
       description: Opens the inventory of the specified player
+   invclr:
+      description: Clear the inventory of the specified player      
